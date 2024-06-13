@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+    <title>NETFLIX</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%  ;
+            background-color: #232323 ;
+        } 
+        html,body{
+            height: 100%;
+            width: 100%;   
+        }
+        .main{
+            height: 100%;
+            width: 100%;
+         }
+         .logo{
+            position: absolute;
+            width: 15%;
+            top: 1%;
+            left: 10%;
+         }
+         .back{
+            width: 100%;
+            height: 123%;
+            background-color:rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+         }
+         .btn-signup button{
+         position: absolute;
+         left: 5px;
+         width: 50%;
+         background-color: red;
+         border: none;
+         border-radius: 4px;
+         margin-left: 850px;
+         padding: 8px 0px;
+         top:25px;
+         cursor: pointer;
+         font-size: medium;
+      }
+      .btn-signup button:hover{
+         background-color: #C11119;
+      }
+      .btn-signup button a{
+         text-decoration: none;
+         color: white;
+
+      }
+
+      .logo button{
+         position: absolute;
+         left: 90%;
+      }
+      .button2 a{
+         text-decoration: none;
+         color: white;
+      }
+
+      .button2 select{
+         bottom: 9px;
+         margin-left: 1px;
+         position: absolute;
+         padding: 8px 27px;
+         font-size: medium;
+         /* background-color: #151515; */
+       }
+
+      .button2{
+         position: absolute;
+         margin-left: 910px;
+         margin-top: -80px;
+      }
+      .button2 i{
+         color:white;
+         margin-left: 8px;
+      }
+
+         .text{
+           position: absolute;
+           color: white;
+           top: 35%;
+           left:25%;
+           text-align: center;
+           font-weight: 900;
+         }
+         .checkbox{
+            position: absolute;
+            top: 65%;
+            left: 30%;
+         }
+         .checkbox input{
+              padding: 13px 100px;
+              font-size: large;
+              border: 1px solid #4a4949;
+              border-radius: 2px;
+         }
+         .checkbox button{
+            margin-top: 5%;
+         }
+         
+         .btn{
+            background-color: red;
+            font-size:larger;
+            padding: 13px 40px;
+            margin-top: 2%;
+            border: none;
+            border-radius: 2px;
+         }
+         .btn a{
+            text-decoration: none;
+            color: white;
+         }
+         .checkbox input{
+            background-color: rgba(0, 0, 0, 0.5);
+         }
+         .page1{
+            height: 75%;
+            width: 100%; 
+            background-color: black;
+            position: relative;
+            margin-top: 10px;
+         }
+         .text1{
+            position: absolute;
+            color: white;
+            top: 25%;
+            left: 15%;
+            font-size:x-large;
+         } 
+         .content1{
+            margin-left: 50%;
+            position: relative;
+         }
+         .image{
+            position: relative;
+            z-index: 99;
+         }
+         .video{
+            position: absolute;
+            object-fit: cover;
+            top: 18%;
+            left: 8%;        
+         }
+         .page2{
+            height: 80%;
+            width: 100%;
+            background-color: black;
+            position: relative;
+            margin-top: 8px;
+            z-index: -9;
+         }
+         .text2{
+            font-size:x-large;
+            position: absolute;
+            color: white;
+            top: 25%;
+            left: 45%;
+         }
+         .pic{
+         width: 21%;
+         height: 20%;
+         margin-left: 9%;
+         margin-top: -10%;
+         border: 1px solid white;
+         border-radius: 10px;
+         position: absolute;
+         color: white;
+         padding: 10px 10px;
+         background-color: black;
+         position: relative;
+      }
+
+      .pic1{
+         margin-left: 30%;
+         margin-top: -20%;
+      }
+
+      .vid{
+         position: absolute;
+         top:20px;
+         left: 230px;
+      }
+         .page3{
+            height: 80%;
+            width: 100%;
+            position: relative;
+            background-color: black;
+            margin-top: 8px;
+         }
+         .text3{
+            color: white;
+            font-size: x-large;
+            position: absolute;
+            top: 25%;
+            left: 15%;
+         }
+         .content3{
+            margin-left: 50%;
+            position: relative;
+         }
+         .image3{
+            position: relative;
+            z-index: 9;
+         }
+         .video3{
+            position: absolute;
+            object-fit: cover;
+            top: 5%;
+            left: 63%; 
+         }
+
+         .video3 video{
+            object-fit: cover;
+            width: 82%;
+            position: relative;
+         }
+
+         .image3{
+            margin-left: 55%;
+         }
+         .page4{
+            height: 80%;
+            width: 100%;
+            position: relative;
+            background-color: black;
+            margin-top: 8px;
+         }
+         .text4{
+            font-size:x-large;
+            position: absolute;
+            color: white;
+            top: 25%;
+            left: 45%;
+         }
+         .FAQ{
+            height: 130%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            margin-top: 8px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+         }
+         .faqtext{
+            font-size: 45px;
+            margin-bottom: 2%;
+            margin-top: -1%;
+         }
+         .Question {
+           width: 100%;
+           max-width: 750px;
+         }
+
+    .Question ul li{
+      list-style: none;
+      padding: 5px;
+    }
+    .Question li label{
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        left: -10px;
+        font-size: 25px;
+        font-weight: 500;
+        background-color: #232323;
+        cursor: pointer;
+        margin-bottom: 5px;
+        position: relative;
+        justify-content: space-between;
+        color: white;
+        /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+      }
+
+      input[type="radio"]{
+        display: none;
+      }
+
+      .Question .content{
+        transition: ease-in 1s;
+        display: none;
+        color: white;
+        padding: 5px 5px;
+        background-color:#232323
+      }
+      .content{
+       width: 100%;
+       margin-left:-10px ;
+      
+      }
+      .content p{
+         text-align: left;
+      }
+
+      .Question input[type="radio"]:checked + label + .content{
+        display:block;
+      }
+
+      .Question input[type="radio"]:checked + label i{
+        transform: rotate(135deg);
+      }
+      .Question label:hover{
+         background-color: #232323;
+      }
+        .checkbox1{
+            top: 65%;
+            left: 35%;
+            background: transparent;
+         }
+         .checkbox1 input{
+              border: 1px solid #4a4949;
+              padding: 13px 100px;
+              font-size: large;
+              /* background-color: #0F0F0F; */
+         }
+         .checkbox1 button{
+            margin-top: 5%;
+         }
+         
+         .btn1{
+            background-color: red;
+            font-size:larger;
+            padding: 13px 40px;
+            margin-top: 2%;
+            border: none;
+            border-radius: 2px;
+         }
+         .btn1 a{
+            text-decoration: none;
+            color: white;
+         }
+         .checkbox1 input{
+            background-color: rgba(0, 0, 0, 0.233);    
+         }  
+         .footer{
+            position: relative;
+            height: 60%;
+            width: 100%;
+            margin-top: 8px;
+            background-color: black;  
+            color: white;
+            flex-direction: column;
+         }
+        .footerlist{
+         display: flex;
+         margin-left: -300px;
+         align-items: center;
+         justify-content: center;
+         color:#a6a3a3;
+         gap: 35px;
+         line-height: 35px;
+        }
+        .footerlist .list ul li{
+         list-style: none;
+         margin-top: 10px;
+        }
+        .footerlist .list ul li a{
+         color: #a6a3a3;
+         
+        }
+        select{
+         padding: 7px 13px;
+         background-color:transparent;
+         color: white;
+         border-radius: 4px;
+         margin-top: -80px;
+      }
+
+      select option{
+         color: black;
+      }
+      .list button{
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        border: none;
+       }
+     .list  select{ 
+       margin-top: 16px;
+       padding: 10px 20px;
+       background-color:#151515;
+       }
+     .list p{
+       position: absolute;
+       margin-left: 3px;
+     }
+     .list li{
+      font-size:17px;
+      }
+
+        .footerbtn{
+         position: absolute;
+         left: 22%;
+         top: 62%;
+         line-height: 45px;
+        }
+        .footerbtn button{
+         padding: 5px 30px;
+         color: white;
+         background-color: rgb(24, 22, 22);
+         border: 2px solid white;
+         font-size: 18px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+<div class="background">
+    <img src="img netflix background.jpg" alt="" width="100%">
+</div>        
+<div class="back"></div>
+     <div class="logo">
+        <img src="Netflix_Logo_PMS.png" alt="" width="100%">
+        <div class="button2">
+         <p><i class="ri-translate-2"></i></p>   
+            <select>
+               <option value="English">English</option>
+               <option value="Hindi">Hindi</option>
+            </select>
+         </div>
+
+         <div class="btn-signup">
+            <button><a href="">Sign In</a></button>          
+         </div>
+     </div>
+     <div class="text" style="font-size: x-large;">
+        <h1><b>Unlimited movies, TV shows and more</b></h1>
+        <h3><b>Watch anywhere. Cancel anytime.</b></h3>
+        <h5><b>Ready to watch? Enter your email to create or restart your membership.</b></h5>
+     </div>
+      <div class="checkbox">
+     <input type="text" placeholder="E-mail address">
+        <button class="btn"><a href="">Get Started ></a></button>
+           </div>
+       </div>
+
+       <div class="page1">
+         <div class="text1">
+            <h1><b>Enjoy on your TV</b></h1>
+            <h3>Watch on smart TVs, PlayStation, Xbox, <br>Chromecast, Apple TV, Blu-ray <br>players and more.</h3>
+         </div>
+         <div class="content1">
+            <div class="image">
+               <img src="imgTV.png" alt="">
+            </div>
+            <div class="video">
+               <video autoplay loop muted src="video-tv-in-0819.m4v"></video>
+            </div>
+         </div>
+       </div>
+
+       <div class="page2">
+         <div class="image2">
+            <img src="mobile-0819.jpg" alt="" width="40%">
+         </div>
+         <div class="pic">
+            <img src="boxshot.png" alt="" width="19%">
+            <div class="pic1">
+               <Span>Stranger Things</Span><br>
+               <span style="font-size: small;color: blue;">Downloading....</span>
+               <div class="vid">
+                  <img src="download-icon.gif" alt="">
+               </div>
+            </div>
+         </div>
+         <div class="text2">
+            <h1><b>Download your shows <br> to watch offline</b></h1>
+            <h3>Save your favourites easily and always have something <br> to watch.</h3>
+         </div>
+       </div>
+
+       <div class="page3">
+         <div class="text3">
+         <h1><b>Watch everywhere</b></h1>
+         <h3>Stream unlimited movies and TV shows on your <br> phone, tablet, laptop, and TV.</h3>
+      </div>
+      <div class="content3"></div>
+      <div class="image3">
+         <img src="imgpage3tv.png" alt="">
+      </div>
+      <div class="video3">
+         <video autoplay muted loop src="video-devices-in.m4v"></video>
+      </div>
+   </div>
+       </div>
+
+       <div class="page4">
+         <div class="image4">
+            <img src="imgchildren.png" alt="">
+         </div>
+         <div class="text4">
+            <h1><b>Create profiles for kids</b></h1>
+            <h3>children on adventures with their favourite <br>
+               characters in a space made just for them—free with <br> your membership.</h3>
+         </div>
+       </div>
+
+       <div class="FAQ">
+         <h1 class="faqtext"><b>Frequently Asked Questions</b></h1>
+         <div class="Question">
+            <ul>
+                <li>
+                   <input type="radio" name="Question" id="first">
+                   <label for="first">what is Netflix? <i class="ri-add-line"></i></label>
+                   <div class="content">
+                     <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+                       <br>
+  
+                       You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                 </div>
+                 
+                </li>
+  
+                <li>
+                    <input type="radio" name="Question" id="second">
+                    <label for="second">How much does Netflix cost? <i class="ri-add-line"></i></label>
+                    <div class="content">
+                       <p>
+                          Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹649 to ₹149 a month. No extra costs, no contracts.
+                       </p>
+                    </div>
+                 </li>
+                 <li>
+                  <input type="radio" name="Question" id="third">
+                  <label for="third">Where can I watch <i class="ri-add-line"></i></label>
+                  <div class="content">
+                     <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+                    <br> <br>
+                        You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+                  </div>
+               </li>
+
+               <li>
+                  <input type="radio" name="Question" id="fourth">
+                  <label for="fourth">How do I cancel                                ? <i class="ri-add-line"></i></label>
+                  <div class="content">
+                     <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+                  </div>
+               </li>
+
+               <li>
+                  <input type="radio" name="Question" id="fifth">
+                  <label for="fifth">What can I watch on Netflix?<i class="ri-add-line"></i></label>
+                  <div class="content">
+                     <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                  </div>
+               </li>
+               <li>
+                  <input type="radio" name="Question" id="six">
+                  <label for="six">Is Netlix good for kids<i class="ri-add-line"></i></label>
+                  <div class="content">
+                     <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+                <br>
+                        Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+                  </div>
+               </li>
+          </ul>
+      </div>
+  
+<div class="ready">
+   <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+</div>
+<div class="checkbox1">
+   <input type="text" placeholder="E-mail address">
+      <button class="btn1"><a href="">Get Started ></a></button>
+         </div>
+      </div>
+ 
+
+ <div class="footer">
+ 
+   <div class="footerlist">
+      
+   <div class="list">
+   <ul>
+      <p><h4>
+      Questions? Call 000-800-919-1694</h4></p>
+      <li><a href="">FAQ</a></li>
+      <li><a href="">Investor Relations</a></li>
+      <li><a href="">Privacy</a></li>
+      <li><a href="">Speed Test</a></li>
+      <p><i class="ri-translate-2"></i></p>
+      <select>
+         <option value="English">English</option>
+         <option value="Hindi">Hindi</option>
+      </select>  
+      <li>Netflix India</li>
+   </ul>
+</div>
+<div class="list">
+   <ul>
+      <li><a href="">Help Center</a></li>
+      <li><a href="">Jobs</a></li>
+      <li><a href="">Cookie Preferences</a></li>
+      <li><a href="">Legal Notices</a></li>
+   </ul>
+</div>
+<div class="list">
+   <ul>
+      <li><a href="">Account</a></li>
+      <li><a href="">Ways to Watch</a></li>
+      <li><a href="">Corporate Information</a></li>
+      <li><a href="">Only on Netflix</a></li>
+   </ul>
+</div>
+<div class="list">
+   <ul>
+      <li><a href="">Media Center</a></li>
+      <li><a href="">Terms of Use</a></li>
+      <li><a href="">Contact Us</a></li>
+   </ul>
+</div>
+   </div> 
+</div>
+
+ 
+
+
+
+</body>
+</html>
+
+
+
+
+<!-- ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAYYCs+0LeC4p2uFUInWSlQZEtHhEQQWpvPeWjoQzTH7 vaishnavigupta1007@gmail.com -->
